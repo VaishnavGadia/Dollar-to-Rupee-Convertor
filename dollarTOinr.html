@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dollar to Indian Rupees</title>
+</head>
+<body>
+    
+    
+<h1 id="hone" align="center">Currency Convertor</h1>
+    <p id="one" align="center"></p>
+    <p id="doll" align="center"></p>
+    <p id="two" align="center"></p>
+    <p id="inr" align="center"></p>
+    <p id="three" align="center"></p>
+    <p id="four" align="center"></p>
+<h4 id="htwo"align="center">Dollar to Indian Rupees</h4>
+<table width="100%">  
+    <th>
+<button id="hthree"onclick ="convert()">Convert</button>
+    </th>
+    </table>
+<p id="hfour" align="center">NOTE : Dollar Data of 11 February 2020, 1800 hrs IST !</p>
+</body>
+<script>
+
+function convert()
+{
+    var a = window.prompt("Please Enter Number of Dollar(s)", "0");
+    var number = parseInt(a);
+    var Ind=(71.26*number);
+    
+    document.getElementById("hone").innerHTML="";
+    document.getElementById("htwo").innerHTML="";
+    document.getElementById("hthree").innerHTML="Convert Again !";
+    document.getElementById("hfour").innerHTML="";
+    document.getElementById("one").innerHTML="The value of ";
+    document.getElementById("doll").innerHTML=number;
+    document.getElementById("two").innerHTML=" Dollar(s) is ";
+    document.getElementById("inr").innerHTML=Ind;
+    document.getElementById("three").innerHTML=" Indian Rupees.";
+    document.getElementById("four").innerHTML="NOTE : Dollar Data of 11 February 2020, 1800 hrs IST!";
+    
+
+
+}
+</script>
+</html>
